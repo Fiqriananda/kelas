@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-1{
+    padding: 10px;
+    text-align: center;
+}
+
+.header-1 li{
+    list-style: none;
+    display: inline;
+    margin: 50px;
+}
+
+.header-1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-1 a:hover{
+    color: whitesmoke;
+}
