@@ -1,0 +1,1 @@
+alert("Kelas cuy")
