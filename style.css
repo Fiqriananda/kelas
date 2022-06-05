@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Staatliches&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 
 *{
     margin: 0;
@@ -16,14 +18,16 @@ body{
 }
 
 .header-1{
-    padding: 10px;
+    padding-left: 32%;
+    padding-top: 0.390625vw;
     text-align: center;
+    display: flex;
 }
 
 .header-1 li{
     list-style: none;
     display: inline;
-    margin: 40px;
+    margin: 3.9318479685452163vw;
 }
 
 .header-1 a{
@@ -31,8 +35,23 @@ body{
     color: white;
 }
 
+.header-1 a::after{
+    border-top: 0.7863695937090432vw solid #5F84B4;
+    
+}
+
+.header-1 a:hover{
+    border-top: 1.3106159895150722vw solid #5F84B4;
+    transition: 0.5s;
+    width: 120%;
+}
+
+.header-1 li:first-child{
+    border-top: 0.7863695937090432vw solid #5F84B4;
+}
+
 .profile-utama{
-    margin-top: 150px;
+    margin-top: 13vw;
     text-align: center;
 }
 
@@ -46,7 +65,7 @@ body{
 
 .arrow{
     margin-left: 50%;
-    margin-top: 330px;
+    margin-top: 19vw;
     animation: bounce 2s linear infinite;
 }
 
@@ -57,21 +76,21 @@ body{
 
 .background-1{
     display: inline-block;
-    padding: 70px;
+    padding: 4vw;
     border-radius: 63% 37% 86% 14% / 27% 57% 43% 73%;
     background-color:#5F84B4;
 }
 
 .section-2{
-    margin-top: 50px;
+    margin-top: 6vw;
     background-color: rgb(234, 234, 234);
-    padding-bottom: 50px;
-    border-radius: 30px;
+    padding-bottom: 6vw;
+    border-radius: 3vw;
     z-index: 1;
 }
 
 .profile{
-    padding-top: 20px;
+    padding-top: 2vw;
     text-align: center;
 }
 
@@ -80,12 +99,12 @@ body{
 }
 
 .social-media{
-    padding: 30px;
+    padding: 1vw;
 }
 
 .social-media li{
     display: inline-block;
-    padding: 100px;
+    padding: 7vw;
 }
 
 .social-media a{
@@ -124,23 +143,24 @@ body{
 
 .section-3 h1{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 5vw;
     color: white;
 }
 
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1vw;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 6vw;
     margin-left: 4%;
+    margin-right: 4%;
     justify-content: center;
 }
 
 .wrapper .box{
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 30vw;
     border-radius: 15px;
     color: #ffff;
     padding: 5%;
@@ -152,8 +172,8 @@ body{
 }
 
 .box h2{
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 3vw;
+    margin-bottom: 3vw;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -163,26 +183,79 @@ body{
 }
 
 .section-4{
-    margin-top: 60px;
+    margin-top: 6vw;
 }
 
-.section-4::before{
+.section-4:before{
     content: '';
     background: url('src/sep-white.png');
     width: 100%;
     height: 28.667vw;
     background-size: 100% 100%;
     position: absolute;
-    top: 112vw;
+    margin-top: -30vh;
     pointer-events: none;
-    z-index: 1;
     background-position: center;
+    z-index: 1;
 }
 
 .section-4 section{
-    padding-bottom: 3000px;
+    padding-bottom: 195.3125vw;
     background-color: white;
 }
+
+.header-section-4{
+    padding-top: 8vw;
+    padding: 4vw;
+    position: absolute;
+    z-index: 2;
+    transform: skewY(-7deg);
+}
+
+.header-section-4 p{
+    font-size: 8vw;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.header-section-4 span{
+    font-size: 7vw;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.info-section{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 15%;
+    display: block;
+}
+
+.ct-1{
+    background-image: url('src/image-1.png');
+    background-size: cover;
+    z-index: 2;
+    width: 69.152vw;
+    height: 29.091vw;
+
+}
+
+.ct-1 h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10vw;
+    color: white;
+    padding-top: 2vh;
+    transform: skewY(-6deg);
+}
+
+.ct-1 p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3vw;
+    margin-right: 29vw;
+    margin-left: 1vw;
+    color: white;
+    transform: skewY(-6deg);
+}
+
+
 
 @keyframes bounce{
     0%{
