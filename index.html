@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 <body>
-    <div class="header-1">
+    <div class="header-1" data-aos="fade-down" data-aos-duration="1000">
         <header>
             <ul>
                 <li><a href="#">Test</a></li>
@@ -19,6 +20,25 @@
         </header>
     </div>
 
-        
+        <div class="profile-utama" data-aos="fade-up" data-aos-duration="2000">
+            <div class="background-1">
+                <h1><a href="#">Hellow</a></h1>
+            </div>
+        </div>
+        <div class="arrow" data-aos="fade-up" data-aos-offset="10"><a href="#section-2"><i class="fa-solid fa-angles-down"></i></a></div>
+
+        <div class="section-2" id="section-2">
+            <section>
+                <div class="profile" data-aos="zoom-in">
+                    <h1>Section 1</h1>
+                </div>
+            </section>
+        </div>
+
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/8d25a176f1.js" crossorigin="anonymous"></script>
+<script>
+  AOS.init();
+</script>
 </html>
