@@ -1,1 +1,1 @@
-alert("Kelas cuy")
+a
