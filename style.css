@@ -67,7 +67,7 @@ body{
     background-color: rgb(234, 234, 234);
     padding-bottom: 50px;
     border-radius: 30px;
-    
+    z-index: 1;
 }
 
 .profile{
@@ -148,6 +148,7 @@ body{
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: 2;
 }
 
 .box h2{
@@ -161,13 +162,26 @@ body{
     color: rgba(255, 255, 255, 0.7);
 }
 
-
-.wrapper .box:hover{
-    transform: translateY(-5%);
+.section-4{
+    margin-top: 60px;
 }
 
-.wrapper .box:hover::before{
-    left: 150%;
+.section-4::before{
+    content: '';
+    background: url('src/sep-white.png');
+    width: 100%;
+    height: 28.667vw;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 112vw;
+    pointer-events: none;
+    z-index: 1;
+    background-position: center;
+}
+
+.section-4 section{
+    padding-bottom: 3000px;
+    background-color: white;
 }
 
 @keyframes bounce{
