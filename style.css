@@ -223,9 +223,9 @@ body{
 }
 
 .info-section{
-    padding-left: 20%;
+    padding-left: 15%;
     padding-right: 20%;
-    padding-top: 15%;
+    padding-top: 20%;
     display: block;
 }
 
@@ -246,12 +246,151 @@ body{
     transform: skewY(-6deg);
 }
 
+
+
 .ct-1 p{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 3vw;
     margin-right: 29vw;
     margin-left: 1vw;
     color: white;
+    transform: skewY(-6deg);
+}
+
+.a-button {
+    margin-left: 15vw;
+    text-align: center;
+    transform: skewY(-7deg);
+}
+
+.a-button a {
+    position: absolute;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: 10vh;
+    overflow: hidden;
+    margin-top: -2vh;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.2s;
+}
+
+
+
+.a-button a:hover {
+    color: #fff;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+
+.a-button a span {
+    position: absolute;
+    display: block;
+}
+
+.a-button a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.a-button a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.a-button a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.a-button a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.a-button a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.a-button a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.a-button a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.a-button a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+.ct-2{
+    background-image: url('/kelas/src/image-3.png');
+    background-size: cover;
+    z-index: 2;
+    width: 69.152vw;
+    height: 29.091vw;
+    margin-right: 25%;
+    margin-left: 16%;
+    margin-top: -10vh;
+    color: #fff;
+}
+
+.ct-2-head{
+    margin-left: 5%;
+    transform: skewY(-5deg);
+}
+
+.ct-2-head p{
+    margin-top: 10vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10vh;
+}
+
+.ct-2-head span{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 7vh;
+}
+
+.ct-2 h1{
+    padding-top: 15vh;
+    padding-left: 3vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 6vh;
+    transform: skewY(-6deg);
+}
+
+.ct-2 p{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-left: 3vh;
+    margin-top: 3vh;
+    font-size: 3vh;
+    margin-right: 30%;
     transform: skewY(-6deg);
 }
 
