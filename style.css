@@ -199,8 +199,21 @@ body{
     z-index: 1;
 }
 
+.section-4::after{
+    content: '';
+    background: url('src/sep-white.png');
+    width: 100%;
+    height: 28.667vw;
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: -20vh;
+    pointer-events: none;
+    background-position: center;
+    z-index: 1;
+}
+
 .section-4 section{
-    padding-bottom: 195.3125vw;
+    padding-bottom: 25vh;
     background-color: white;
 }
 
@@ -413,15 +426,198 @@ body{
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 
-.ic-1:hover{
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
-
 .ic-1 {
     background-color: rgb(55, 148, 210);
     padding: 1vh;
 }
 
+.ct-3{ 
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 3vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.box-name{
+    background-color: #5F84B4;
+    padding: 10vh;
+    margin-right: 50vh;
+    padding-bottom: 10vh;
+    border-radius: 30px;
+}
+
+.ct-3-head{
+    transform: skewY(-6deg);
+    margin-left: 5%;
+}
+
+.ct-3-head p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10vh;
+ 
+}
+
+.ct-3-head span{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 7vh;
+}
+
+.container-name{
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 50vh;
+    max-width: 100vh;
+}
+
+.container-name dt{
+    background-color: #9b9b9b;
+    color: black;
+    padding: 1vh;
+    position: sticky;
+    top: 0;
+    border-radius: 0.5vh;
+}
+
+.container-name dd{
+    background-color: white;
+    border-bottom: rgba(0, 0, 0, 0.162) solid 3px;
+}
+
+.wrapper-ct-3{
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.list-name p{
+    margin-bottom: 3vh;
+    font-size: 5vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container-name::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.container-name::-webkit-scrollbar
+{
+	width: 12px;
+    border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.container-name::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #817a7a;
+}
+
+.section-5 section{
+    margin-bottom: 50vh;
+}
+
+.class-card-wrapper{
+    margin-top: 50vh;
+    justify-content: center;
+}
+
+.class-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: -20vw;
+    justify-content: center;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.class-card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.class-card .class-box{
+    width: 40vh;
+    height: 60vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    
+}
+
+.class-card p{
+    margin-top: 50vh;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.class-card span{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.class-card .instagram{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.class-card .facebook{
+    background-color: #4267B2;
+}
+
+.class-card .discord{
+    background-color: #7289DA;
+}
+
+.class-card .instagram:not(:hover){
+    animation: for-hover-card 1s forwards ease;
+}
+
+.class-card .facebook:not(:hover){
+    animation: for-hover-card 1s forwards ease;
+}
+
+.class-card .discord:not(:hover){
+    animation: for-hover-card 1s forwards ease-out;
+}
+
+/* 1 */
+
+.class-card .instagram:hover{
+    animation: hover-card 1s forwards ease;
+}
+
+.class-card .facebook:hover{
+    animation: hover-card 1s forwards ease;
+}
+
+.class-card .discord:hover{
+    animation: hover-card 1s forwards ease-out;
+}
+
+@keyframes for-hover-card{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes hover-card{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+
+}
 
 @keyframes bounce{
     0%{
