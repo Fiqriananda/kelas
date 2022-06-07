@@ -350,20 +350,20 @@ body{
 
 
 .ct-2{
-    background-image: url('/kelas/src/image-3.png');
+    background-image: url('/src/image-3.png');
     background-size: cover;
     z-index: 2;
     width: 69.152vw;
     height: 29.091vw;
     margin-right: 25%;
-    margin-left: 16%;
+    margin-left: 17%;
     margin-top: -10vh;
     color: #fff;
 }
 
 .ct-2-head{
     margin-left: 5%;
-    transform: skewY(-5deg);
+    transform: skewY(-6deg);
 }
 
 .ct-2-head p{
@@ -394,6 +394,33 @@ body{
     transform: skewY(-6deg);
 }
 
+.icon-btn{
+    transform: skewY(-7deg);
+    display: inline-flex;
+    margin-left: 69%;
+    margin-top: -10vh;
+    text-align: center;
+}
+
+.icon-btn a{
+    background-color: white;
+    padding: 3vh;
+    text-decoration: none;
+    color: black;
+}   
+
+.icon-btn:hover{
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.ic-1:hover{
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.ic-1 {
+    background-color: rgb(55, 148, 210);
+    padding: 1vh;
+}
 
 
 @keyframes bounce{
