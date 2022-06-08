@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Staatliches&family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 
 *{
@@ -363,7 +364,7 @@ body{
 
 
 .ct-2{
-    background-image: url('/src/image-3.png');
+    background-image: url('src/image-3.png');
     background-size: cover;
     z-index: 2;
     width: 69.152vw;
@@ -517,7 +518,7 @@ body{
 }
 
 .section-5 section{
-    margin-bottom: 50vh;
+    margin-bottom: 10vh;
 }
 
 .class-card-wrapper{
@@ -595,6 +596,18 @@ body{
 
 .class-card .discord:hover{
     animation: hover-card 1s forwards ease-out;
+}
+
+.footer{
+    font-size: 3vh;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.396);
+    font-family: 'Titilium Web', sans-serif;
+}
+
+.wrapper-footer{
+    margin-left: 70%;
+    margin-bottom: 5vh;
 }
 
 @keyframes for-hover-card{
