@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h3><%=  title  %></h3>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% for (let user of users) { %>
+                    <tr>
+                    <th scope="row"><%= user.id %></th>
+                    <th scope="row"><%= user.Nama %></th>
+                    <th scope="row"><%= user.status %></th>
+                </tr>
+                    <% } %>
+            </tbody>
+          </table>
+          <h3>Input</h3>
+          <form class="row g-3" action="/tambah" method="post">
+            <div class="col-md-6">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" name="nama" class="form-control" id="nama">
+            </div>
+            <div class="col-md-6">
+              <label for="status" class="form-label">Status</label>
+              <input type="text" name="status" class="form-control" id="status">
+            </div>
+            <input type="submit" value="tambahkan" class="btn btn-danger">
+            </form>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>
