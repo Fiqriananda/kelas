@@ -364,7 +364,7 @@ body{
 
 
 .ct-2{
-    background-image: url('/src/image-3.png');
+    background-image: url('src/image-3.png');
     background-size: cover;
     z-index: 2;
     width: 69.152vw;
